@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
+import Footer from "./Footer";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const sn = 'Super React';
+    const menu = ['Home', 'Products', 'Contacts'];
+    return (
+        <div className="App">
+            PASV REACT COURSE
+
+            <Header name = {sn} menu={menu} />
+
+            <Footer name = {sn} menu={menu} />
+        </div>
+    );
 }
 
 export default App;
